@@ -12,7 +12,8 @@ Knee Exoskeleton Design
 ## Table of Contents
 
 - [Overview](#overview)
-- [Features](#features)
+- [Project Objectives](#project-objectives)
+- [Design Features](#design-features)
 - [System Architecture](#system-architecture)
 - [Methodology](#methodology)
 - [Results](#results)
@@ -21,47 +22,52 @@ Knee Exoskeleton Design
 
 ## Overview
 
-The objective of this project is to develop a functional real-time ASL recognition system. The approach involves:
+Cerebral Palsy often impairs motor function, limiting a child's ability to perform essential movements. This project focuses on designing a mechanical exoskeleton that provides assistive support to the knee joint, facilitating improved mobility for children with CP.
 
-- Applying image filtering with OpenCV for feature extraction.
-- Utilizing a CNN model for gesture classification.
-- Implementing a verification mechanism to enhance prediction accuracy, especially for similar symbols.
+## Project Objectives
 
-## Features
+- Develop a mechanical design that supports knee joint movements essential for sitting, standing, and walking.
+- Ensure the exoskeleton is lightweight, adjustable, and comfortable for pediatric use.
+- Incorporate safety features to prevent hyperextension and accommodate varying degrees of mobility impairment.
+- Validate the design through simulations and, if possible, prototype testing.
 
-- **Real-Time Detection**: Processes video input to recognize hand gestures instantaneously.
-- **High Accuracy**: Achieved an accuracy of 95.7% on the custom dataset.
-- **Verification Mechanism**: Employs a two-layer algorithm to verify and predict symbols that are similar to each other, enhancing reliability.
-- **Frame-Based Prediction**: Considers a letter detected only if it appears consistently over 50 frames, reducing false positives.
+## Design Features
+
+- **Hinged Knee Mechanism**: Allows natural flexion and extension of the knee joint.
+- **Adjustable Straps**: Accommodate different leg sizes and provide secure fitting.
+- **Lightweight Materials**: Utilize materials that reduce the overall weight without compromising strength.
+- **Safety Stops**: Prevent excessive movement that could lead to injury.
+- **Modular Components**: Facilitate easy maintenance and potential upgrades.
 
 ## System Architecture
 
-The system comprises the following components:
+The exoskeleton comprises the following components:
 
-- **Data Acquisition**: Captures hand gesture images using a webcam.
-- **Preprocessing**: Applies image filtering techniques using OpenCV to extract relevant features.
-- **Model Training**: Trains a CNN model on the processed images for gesture classification.
-- **Prediction Verification**: Implements a mechanism to verify predictions over multiple frames to ensure consistency.
+- **Frame Structure**: Provides the main support and houses the hinge mechanism.
+- **Joint Assembly**: Mimics the natural movement of the knee, allowing controlled motion.
+- **Strapping System**: Ensures the exoskeleton remains securely attached during movement.
+- **Padding**: Enhances comfort and reduces pressure points.
 
 ## Methodology
 
-1. **Data Collection**: Gathered a dataset of ASL alphabet gestures.
-2. **Preprocessing**: Applied image filtering to enhance features relevant for classification.
-3. **Model Development**: Designed and trained a CNN model tailored for hand gesture recognition.
-4. **Verification Algorithm**: Developed a two-layer algorithm to verify predictions, especially for gestures with similar appearances.
-5. **Real-Time Implementation**: Integrated the model into a system capable of processing live video input for real-time gesture recognition.
+1. **Needs Assessment**: Analyze the specific mobility challenges faced by children with CP.
+2. **Conceptual Design**: Develop initial sketches and 3D models of the exoskeleton.
+3. **Material Selection**: Choose materials that balance strength, weight, and comfort.
+4. **Simulation**: Use CAD software to simulate stress, strain, and movement.
+5. **Prototype Development**: If feasible, create a physical prototype for testing.
+6. **Evaluation**: Assess the design's effectiveness in assisting movement and its comfort during use.
 
 ## Results
 
-- **Accuracy**: The system achieved a 95.7% accuracy rate on the custom dataset.
-- **Robustness**: The verification mechanism significantly reduced misclassifications, particularly for gestures with similar features.
-- **Real-Time Performance**: Successfully implemented real-time gesture recognition with minimal latency.
+- **Design Validation**: Simulations indicate the exoskeleton can support the necessary movements without exceeding material stress limits.
+- **User Comfort**: The adjustable and padded design aims to maximize comfort for pediatric users.
+- **Mobility Enhancement**: The exoskeleton is expected to aid in performing daily activities, thereby improving the quality of life for children with CP.
 
 ## Applications
 
-- **Assistive Technology**: Enables communication for individuals with hearing and speech impairments.
-- **Human-Computer Interaction**: Facilitates gesture-based control systems.
-- **Educational Tools**: Serves as a learning aid for teaching and understanding ASL.
+- **Rehabilitation Centers**: Assist in physical therapy sessions to improve motor functions.
+- **Home Use**: Provide daily support for mobility within the home environment.
+- **Educational Institutions**: Enable better participation in school activities by enhancing mobility.
 
 ## License
 
